@@ -1,0 +1,4 @@
+[filechooser]
+# WezTermを特別なクラス名で起動し、中でYaziを実行する
+# (最後の"$1"はブラウザが指定した一時ファイルパスを受け取るために必須です)
+cmd=wezterm start --class popup -e yazi --chooser-file "$1"
