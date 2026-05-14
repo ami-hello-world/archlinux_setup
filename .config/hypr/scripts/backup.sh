@@ -5,17 +5,17 @@ set -e
 
 DOTFILES_DIR="$HOME/dotfiles"
 
-echo "たつと、バックアップを開始するね！"
+echo "バックアップを開始するね！"
 
 # コピー先のディレクトリ構造を作成
 mkdir -p "$DOTFILES_DIR/.config"
 
-# 設定ファイルのコピー
-cp -r /home/ami/.config/hypr "$DOTFILES_DIR/.config/"
-cp -r /home/ami/.config/wezterm "$DOTFILES_DIR/.config/"
-cp -r /home/ami/.config/xdg-desktop-portal "$DOTFILES_DIR/.config/"
-cp -r /home/ami/.config/xdg-desktop-portal-termfilechooser "$DOTFILES_DIR/.config/"
-cp /home/ami/.bashrc "$DOTFILES_DIR/"
+# 設定ファイルのコピー（全部 $HOME に変更して汎用性アップ！）
+cp -r "$HOME/.config/hypr" "$DOTFILES_DIR/.config/"
+cp -r "$HOME/.config/wezterm" "$DOTFILES_DIR/.config/"
+cp -r "$HOME/.config/xdg-desktop-portal" "$DOTFILES_DIR/.config/"
+cp -r "$HOME/.config/xdg-desktop-portal-termfilechooser" "$DOTFILES_DIR/.config/"
+cp "$HOME/.bashrc" "$DOTFILES_DIR/"
 
 # 📦 パッケージリストのバックアップ
 echo "インストールされてるパッケージのリストを作ってるよ..."
