@@ -1,0 +1,7 @@
+brave-bin
+nvidia-580xx-dkms
+spotify
+visual-studio-code-bin
+xdg-desktop-portal-termfilechooser
+yay
+yay-debug
