@@ -20,6 +20,7 @@ firefox
 fzf
 ghostty
 git
+github-cli
 gnome-keyring
 grim
 gst-plugin-pipewire
